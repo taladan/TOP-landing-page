@@ -11,15 +11,30 @@ body {
 .header {
   display: flex;
   background-color: #1f2937;
-  flex-direction: column;
-  padding: 20px;
-  padding-bottom: 48px;
+  justify-content: space-around;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 20%;
 }
 
-/* begin topline config */
-.topline {
+.top-right {
   display: flex;
-  justify-content: space-around;
+  flex-grow: 1;
+  flex-basis: 0;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.top-left {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  flex-direction: column;
+  gap: 20px;
+  align-content: space-between;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #f9faf8;
 }
 
 .header-logo {
@@ -52,28 +67,28 @@ a {
 /* begin hero config */
 .hero-container {
   display: flex;
-  justify-content: center;
+  flex-grow: 1;
+  flex-basis: 0;
+  justify-content: space-around;
   font-family: "Roboto", serif;
   color: #f9faf8;
-  padding: 50px;
 }
 
 .hero-main {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 32px;
+  gap: 10px;
 }
 
 .hero-main > h1 {
   font-weight: bold;
-  font-size: 48px;
+  /* font-size: 48px; */
 }
 
 .hero-secondary {
   font-weight: 100;
   font-size: 18px;
+  /* padding: 16px; */
 }
 
 .hero-button {
