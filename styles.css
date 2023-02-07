@@ -11,6 +11,7 @@ body {
   display: flex;
   background-color: #1f2937;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .topline {
@@ -45,6 +46,8 @@ a {
 }
 
 .hero-container {
+  display: flex;
+  justify-content: space-around;
 }
 
 .hero-main {
