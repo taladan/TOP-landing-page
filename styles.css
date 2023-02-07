@@ -1,10 +1,11 @@
 /* debugging code */
-
 * {
   outline: 1px solid green;
 }
 
 body {
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -51,22 +52,43 @@ a {
 /* begin hero config */
 .hero-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  font-family: "Roboto", serif;
+  color: #f9faf8;
+  padding: 50px;
 }
 
 .hero-main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 32px;
+}
+
+.hero-main > h1 {
+  font-weight: bold;
+  font-size: 48px;
 }
 
 .hero-secondary {
+  font-weight: 100;
+  font-size: 18px;
 }
 
 .hero-button {
+  color: #f9faf8;
 }
 
 button {
+  border-radius: 8px;
+  color: #f9faf8;
+  background-color: #3882f6;
 }
 
 .hero-image-container {
+  background-color: gray;
+  flex-basis: 25%;
 }
 
 /* end hero config */
