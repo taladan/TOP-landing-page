@@ -9,8 +9,13 @@ body {
 
 .header {
   display: flex;
-  flex-flow: column;
   background-color: #1f2937;
+  flex-direction: column;
+}
+
+.topline {
+  display: flex;
+  justify-content: space-around;
 }
 
 .header-logo {
@@ -23,14 +28,18 @@ body {
 ul {
   display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: small;
 }
 
 li {
+  margin: 10px;
 }
 
 a {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   text-decoration: none;
   color: #e5e7eb;
 }
