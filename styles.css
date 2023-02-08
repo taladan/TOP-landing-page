@@ -10,8 +10,8 @@ body {
 
 .header {
   display: flex;
+  flex-direction: column;
   background-color: #1f2937;
-  justify-content: space-around;
   font-family: "Roboto", sans-serif;
   padding-left: 10%;
   padding-right: 10%;
@@ -19,36 +19,27 @@ body {
   color: #f9faf8;
 }
 
-.top-right {
+.top {
   display: flex;
-  flex-grow: 1;
-  flex-basis: 0;
-  padding: 0;
-  margin: 0;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
-.top-left {
+.bottom {
   display: flex;
-  flex-grow: 1;
-  flex-basis: 0;
-  flex-direction: column;
-  gap: 20px;
-  align-content: space-between;
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .header-logo {
-  flex: 1;
+  /* flex: 1; */
+  flex-basis: 50%;
   font-size: 24px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 
 ul {
-  flex: 0;
   display: flex;
   list-style: none;
   padding: 0;
@@ -58,7 +49,7 @@ ul {
 }
 
 li {
-  margin: 10px;
+  margin-left: 15px;
 }
 
 a {
@@ -66,17 +57,17 @@ a {
   color: #e5e7eb;
 }
 
-.hero-container {
+.hero-left {
   display: flex;
-  flex-grow: 1;
-  flex-basis: 0;
-  justify-content: space-around;
+  flex-direction: column;
+  flex-basis: 50%;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .hero-main {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  align-items: flex-end;
 }
 
 .hero-main > h1 {
@@ -85,11 +76,15 @@ a {
 }
 
 .hero-secondary {
+  display: flex;
   font-weight: 100;
   font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 5%;
 }
 
 .hero-button {
+  display: flex;
 }
 
 button {
@@ -99,13 +94,17 @@ button {
   background-color: #3882f6;
 }
 
-.hero-image-container {
-  flex: 1;
+.hero-right {
+  /* begin debugging code */
+  outline: 2px solid rgb(208, 255, 0);
+  /* end debugging code */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
   background-color: gray;
-  flex-basis: 25%;
-  margin: 5%;
+  height: 250px;
 }
-
 /* end hero config */
 
 .info {
