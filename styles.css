@@ -23,6 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-bottom: 30px;
 }
 
 .bottom {
@@ -95,9 +96,6 @@ button {
 }
 
 .hero-right {
-  /* begin debugging code */
-  outline: 2px solid rgb(208, 255, 0);
-  /* end debugging code */
   display: flex;
   justify-content: center;
   align-items: center;
